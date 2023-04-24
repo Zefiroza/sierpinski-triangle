@@ -116,12 +116,9 @@ public class FractalTriangle extends JFrame {
 
     public static void main(String[] args) {
 
-        EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                FractalTriangle ex = new FractalTriangle();
-                ex.setVisible(true);
-            }
+        EventQueue.invokeLater(() -> {
+            FractalTriangle ex = new FractalTriangle();
+            ex.setVisible(true);
         });
     }
 }
